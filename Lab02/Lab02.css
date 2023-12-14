@@ -59,7 +59,7 @@ of the elements on the page can help fix issues with spacing too, especially if 
 /* OPTIONAL ↓ REMOVE COMMENTS TO SEE RED BORDER:*/
 
 * {
-  border: 1px solid red;
+  border: 1px solid red; 
 }
 
 /* ---ELEMENT SELECTORS--- */
@@ -68,10 +68,10 @@ html {
   font-family: Calibri, 'Trebuchet MS', sans-serif;
   background: linear-gradient(180deg, #84daf5, #89ffff, #affffa, #ffffff);
 }
-body {
+body {margin-top: 1rem; margin-bottom: 1rem; margin-left: 5rem; margin-right: 5rem;
 }
 
-h1 {
+h1 {filter: drop-shadow(2px 2px 1px #0f6a9e);
   text-align: center;
 }
 h2 {
@@ -79,7 +79,7 @@ h2 {
   text-align: center;
 }
 p,
-li {
+li {font-size: 20px;
 }
 ol {
   padding: 20px;
@@ -88,32 +88,36 @@ ol {
 ol li {
   padding: 10px 0;
 }
-img {
+img {margin: 1rem; border-radius: 1rem; box-shadow: 2 2 2 1 black .5;
 }
 figcaption {
   text-align: center;
   font-weight: bold;
+  color: rgb(0, 58, 66);
 }
 footer {
   margin: 2rem 0 2rem 0;
+  text-align: center;
 }
 
 /* ---CUSTOM CLASS NAME SELECTORS--- */
 
 .banner-div {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 #banner-long {
   max-width: 100%;
   height: auto;
 }
 #banner-short {
-  width: 230px;
+  display: none;
 }
 .img-div {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .tips-div {
@@ -122,6 +126,8 @@ footer {
   justify-content: start;
 }
 .top-places-div {
+  background-color: rgb(0, 58, 66);
+  border-radius: 1rem;
   max-width: 800px;
   margin: 5rem auto;
   color: rgb(253, 197, 132);
@@ -143,6 +149,9 @@ footer {
 
 @media only screen and (max-width: 1100px) {
   .tips-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -160,9 +169,9 @@ footer {
   .tips-div img {
     width: 230px;
   }
-  #banner-long {
+  #banner-long {display: none;
   }
-  #banner-short {
+  #banner-short {display:block;
   }
 }
 /* ------------------------- */
