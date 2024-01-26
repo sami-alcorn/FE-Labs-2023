@@ -51,22 +51,29 @@ Question 1. Creating & 'console.log()'ing variables \n`);
  * Step 6: Create a variable to hold a street address.
  * ↓ YOUR CODE HERE ↓ */
 
-console.log("Step 1:  Number of Seats on a Plane");
+var numberOfPlaneSeats = 100;
+var costOfGroceries = 237.73;
+var middleInitial = "L";
+var hotOutside = false;
+var firstName = "Sami";
+var streetAddress = "302 N Straughan";
+
+console.log(numberOfPlaneSeats);
 
 
-console.log("Step 2:  Cost of Groceries");
+console.log(costOfGroceries);
 
 
-console.log("Step 3:  Middle Initial");
+console.log(middleInitial);
 
 
-console.log("Step 4:  Is it Hot Outside?");
+console.log(hotOutside);
 
 
-console.log("Step 5:  First Name");
+console.log(firstName);
 
 
-console.log("Step 6:  Street Address");
+console.log(streetAddress);
 
 
 /*-------------------------------------------------------*/
@@ -82,27 +89,27 @@ Question 2. Creating & 'console.log()'ing variables \n`);
  *
  * */
 
-    console.log('Remove Plane Seats:')
+    console.log(numberOfPlaneSeats - 2)
 //	A customer booked 2 plane seats. Remove 2 seats from the available seats variable
 //  ↓ YOUR CODE HERE ↓
 
 
-    console.log('Buy a Candy Bar:')
+    console.log(costOfGroceries + 2.15)
 //	Impulse candy bar purchase! Add 2.15 to the grocery total
 //  ↓ YOUR CODE HERE ↓
 
 
-    console.log('Fix a Birth Certificate:')
+    console.log(middleInitial = "S")
 //	A birth certificate was printed incorrectly, change the middle initial to something else
 //  ↓ YOUR CODE HERE ↓
 
 
-    console.log('Changing Seasons:')
+    console.log(hotOutside = true)
 //	The season has changed, update the hot outside variable	to be opposite of what it was
 //  ↓ YOUR CODE HERE ↓
     
 
-    console.log('Full Name:')
+    console.log(firstName + middleInitial + "Alcorn")
 //	Create a new variable called full name using the customer's
 //  first name, the middle initial, and a last name of your choice
 //  ↓ YOUR CODE HERE ↓
